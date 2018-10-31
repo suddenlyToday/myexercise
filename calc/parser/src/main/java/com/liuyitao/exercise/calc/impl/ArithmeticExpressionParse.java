@@ -57,7 +57,7 @@ public class ArithmeticExpressionParse implements ExpressionParse {
                 while(i-1>=0&&CharUtils.isCharFloatNum(expression.charAt(i-1)))
                 {
                     i--;
-                    sb.append(expression.charAt(i));
+                    sb.insert(0, expression.charAt(i));
                 }
                 stack2.push(sb.toString());
             }
